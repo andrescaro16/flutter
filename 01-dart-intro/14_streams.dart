@@ -1,6 +1,6 @@
 void main() {
   emitNumbers().listen((value) {
-    print("Stream listen: $value");
+    print("Stream value: $value");
   });
 }
 

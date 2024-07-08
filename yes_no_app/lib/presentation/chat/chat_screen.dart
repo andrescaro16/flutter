@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -10,11 +11,35 @@ class ChatScreen extends StatelessWidget {
         leading: const Padding(
           padding: EdgeInsets.all(4.0),
           child: CircleAvatar(
-            backgroundImage: NetworkImage('https://singifyai.fineshare.com/song-ai/covers/scarlett-johansson.webp'),
-          ),
+              backgroundImage: NetworkImage(
+                  'https://fotografias.lasexta.com/clipping/cmsimages02/2022/05/03/6F9C82A4-0FA4-40F9-BE2F-87F8DBBC1224/elon-musk-met-gala_103.jpg?crop=1407,1055,x0,y18&width=1200&height=900&optimize=low&format=webply')),
         ),
-        title: const Text('Mi amor ❤️'),
+        title: const Text('Goat💲📈'),
         centerTitle: false,
+      ),
+      body: _ChatView(),
+    );
+  }
+}
+
+class _ChatView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Expanded(
+                child: ListView.builder(
+              itemCount: 100,
+              itemBuilder: (context, index) {
+                return Text('Indice: $index');
+              },
+            )),
+            const Text('Mundo'),
+          ],
+        ),
       ),
     );
   }

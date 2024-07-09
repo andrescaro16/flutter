@@ -17,7 +17,7 @@ class OutgoingMessageBubble extends StatelessWidget {
         constraints: BoxConstraints(maxWidth: maxWidth),
         child: Column(
           children: [
-            const SizedBox(height: 5),
+            const SizedBox(height: 3),
             Container(
               decoration: BoxDecoration(
                 color: colors.primary,
@@ -35,7 +35,7 @@ class OutgoingMessageBubble extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 3),
           ],
         ),
       ),

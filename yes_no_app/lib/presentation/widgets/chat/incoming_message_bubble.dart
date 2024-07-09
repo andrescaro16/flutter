@@ -17,7 +17,7 @@ class IncomingMessageBubble extends StatelessWidget {
         constraints: BoxConstraints(maxWidth: maxWidth),
         child: Column(
           children: [
-            const SizedBox(height: 5),
+            const SizedBox(height: 3),
             Container(
               decoration: BoxDecoration(
                 color: colors.secondary,
@@ -35,9 +35,9 @@ class IncomingMessageBubble extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 6),
             _ImageBubble(),
-            const SizedBox(height: 5),
+            const SizedBox(height: 3),
           ],
         ),
       ),

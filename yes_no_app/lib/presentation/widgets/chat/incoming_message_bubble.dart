@@ -16,6 +16,7 @@ class IncomingMessageBubble extends StatelessWidget {
       child: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: maxWidth),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 3),
             Container(
@@ -28,7 +29,8 @@ class IncomingMessageBubble extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Text(
                   message.text,
                   style: const TextStyle(color: Colors.white),

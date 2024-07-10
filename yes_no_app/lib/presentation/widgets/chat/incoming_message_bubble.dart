@@ -38,7 +38,8 @@ class IncomingMessageBubble extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 6),
-            _ImageBubble(),
+            _ImageBubble(message.imageUrl ??
+                'https://yesno.wtf/assets/yes/5-64c2804cc48057b94fd0b3eaf323d92c.gif'),
             const SizedBox(height: 3),
           ],
         ),
@@ -48,6 +49,10 @@ class IncomingMessageBubble extends StatelessWidget {
 }
 
 class _ImageBubble extends StatelessWidget {
+  final String imageUrl;
+
+  const _ImageBubble(this.imageUrl);
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -55,7 +60,8 @@ class _ImageBubble extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Image.network(
-        'https://yesno.wtf/assets/yes/5-64c2804cc48057b94fd0b3eaf323d92c.gif',
+        // 'https://yesno.wtf/assets/yes/5-64c2804cc48057b94fd0b3eaf323d92c.gif',
+        imageUrl,
         width: size.width * 0.8,
         height: 150,
         fit: BoxFit.cover,

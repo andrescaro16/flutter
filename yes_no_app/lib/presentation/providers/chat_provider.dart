@@ -11,6 +11,7 @@ class ChatProvider extends ChangeNotifier {
         text:
             'Hey, come to the office. Would be a pleasure to have you here 🌐',
         direction: MessageDirection.incoming),
+        
     Message(text: 'Elon, See u there! 🚀', direction: MessageDirection.outgoing)
   ];
 

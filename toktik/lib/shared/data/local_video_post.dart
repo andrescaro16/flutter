@@ -1,4 +1,18 @@
 List<Map<String, dynamic>> videoPosts = [
+  // {
+  //   'name': 'Subiendo escaleras automáticas',
+  //   'videoUrl':
+  //       'https://videos.pexels.com/video-files/4678261/4678261-hd_1080_1920_25fps.mp4',
+  //   'likes': 23230,
+  //   'views': 1523,
+  // },
+  // {
+  //   'name': 'Planta apreciada por peatones',
+  //   'videoUrl':
+  //       'https://videos.pexels.com/video-files/4434242/4434242-hd_1080_1920_24fps.mp4',
+  //   'likes': 24230,
+  //   'views': 1343,
+  // },
   {
     'name': 'Subiendo escaleras automáticas',
     'videoUrl': 'assets/videos/1.mp4',
